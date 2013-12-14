@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<RelativeLayout android:id="@+id/news_item_layout"
+		android:layout_height="wrap_content" android:layout_width="fill_parent"
+		android:paddingTop="15dip">
+		<RelativeLayout android:id="@+id/relativeLayout1"
+			android:layout_height="wrap_content" android:layout_width="wrap_content">
+			<LinearLayout android:id="@+id/news_image_layout"
+				android:layout_height="wrap_content" android:layout_width="wrap_content">
+				<WebView android:saveEnabled="false" android:visibility="visible"
+					android:scrollbars="none" 
+					android:layout_width="100dip" 
+					android:longClickable="false"
+					android:focusableInTouchMode="false" 
+					android:focusable="false"
+					android:clickable="false" 
+					android:layout_height="wrap_content"
+					android:layout_marginLeft="10dip" android:id="@+id/list_item_webview"/>
+			</LinearLayout>
+			<ImageView android:layout_width="wrap_content" android:id="@+id/imageView1" android:layout_height="wrap_content" android:layout_centerInParent="true" android:src="@drawable/play"></ImageView>
+		</RelativeLayout>
+		<TextView android:layout_height="wrap_content" 
+			android:layout_width="wrap_content" 
+			android:layout_marginLeft="10dip" 
+			android:layout_marginTop="10dip"
+			android:layout_below="@+id/relativeLayout1" android:textColor="@color/text_orange" android:id="@+id/list_item_text" android:lines="1" android:ellipsize="end"/>
+	</RelativeLayout>
+</LinearLayout>

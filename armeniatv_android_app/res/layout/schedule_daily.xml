@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent" android:clickable="false">
+	<RelativeLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:id="@+id/header">
+		<RelativeLayout android:id="@+id/relativeLayout1" 
+			android:layout_width="fill_parent" android:layout_height="50dip" android:background="@drawable/bottom_toolbar_background" android:paddingTop="5dip" android:paddingBottom="5dip" android:paddingRight="5dip">
+			<TextView android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/text_white" android:textSize="18dip" android:text="@string/schedule_daily" android:layout_centerInParent="true"></TextView>
+		</RelativeLayout>
+	</RelativeLayout>
+	<RelativeLayout android:layout_width="fill_parent" android:background="@drawable/bottom_toolbar_background" android:layout_height="50dip" android:layout_alignParentBottom="true" android:id="@+id/all_shows_menu_footer">
+		<include layout="@layout/footer_layout" android:id="@+id/featured_menu_footer_ref"  android:layout_width="fill_parent" android:layout_height="50dip" android:layout_alignParentBottom="true"/>
+	</RelativeLayout>
+	<LinearLayout android:layout_below="@+id/header" android:id="@+id/scheduler_daily_today_layout" android:layout_width="fill_parent" android:layout_height="15dip" android:background="#1C1C1C">
+		<LinearLayout android:id="@+id/linearLayout1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1">
+		</LinearLayout>
+		<LinearLayout android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_weight="1" android:gravity="center" android:id="@+id/scheduler_daily_sun_today" android:visibility="invisible">
+			<TextView android:id="@+id/textView17" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="today" android:textColor="@color/text_white" android:textSize="10dip"></TextView>
+		</LinearLayout>
+		<LinearLayout android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_weight="1" android:gravity="center" android:id="@+id/scheduler_daily_mon_today" android:visibility="invisible">
+			<TextView android:id="@+id/textView18" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="today" android:textColor="@color/text_white" android:textSize="10dip"></TextView>
+		</LinearLayout>
+		<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1" android:gravity="center" android:id="@+id/scheduler_daily_tue_today" android:visibility="invisible">
+			<TextView android:id="@+id/textView19" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="today" android:textColor="@color/text_white" android:textSize="10dip"></TextView>
+		</LinearLayout>
+		<LinearLayout android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_weight="1" android:gravity="center" android:id="@+id/scheduler_daily_wed_today" android:visibility="invisible">
+			<TextView android:id="@+id/textView20" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="today" android:textColor="@color/text_white" android:textSize="10dip"></TextView>
+		</LinearLayout>
+		<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1" android:gravity="center" android:id="@+id/scheduler_daily_thu_today" android:visibility="invisible">
+			<TextView android:id="@+id/TextView01" android:layout_height="wrap_content" android:text="today" android:textColor="@color/text_white" android:layout_width="wrap_content" android:textSize="10dip" android:visibility="visible"></TextView>
+		</LinearLayout>
+		<LinearLayout android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_weight="1" android:gravity="center" android:id="@+id/scheduler_daily_fri_today" android:visibility="invisible">
+			<TextView android:id="@+id/TextView02" android:layout_height="wrap_content" android:text="today" android:textColor="@color/text_white" android:layout_width="wrap_content" android:textSize="10dip"></TextView>
+		</LinearLayout>
+		<LinearLayout android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_weight="1" android:gravity="center" android:id="@+id/scheduler_daily_sat_today" android:visibility="invisible">
+			<TextView android:id="@+id/TextView03" android:layout_height="wrap_content" android:text="today" android:textColor="@color/text_white" android:layout_width="wrap_content" android:textSize="10dip"></TextView>
+		</LinearLayout>
+		<LinearLayout android:id="@+id/linearLayout10" android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_weight="1"></LinearLayout>
+	</LinearLayout>
+	<LinearLayout android:layout_width="fill_parent" android:layout_height="60dip" android:id="@+id/scheduler_days_layout" android:layout_below="@+id/scheduler_daily_today_layout">
+		<LinearLayout android:layout_weight="1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:id="@+id/scheduler_daily_back_layout" android:gravity="center" android:background="@drawable/schedule_daily_top_panel_background" android:clickable="true">
+			<Button android:background="@drawable/xml_button_back" android:layout_height="wrap_content" android:id="@+id/scheduler_daily_back_button" android:layout_width="wrap_content" android:clickable="false" android:duplicateParentState="true"></Button>
+		</LinearLayout>
+		<LinearLayout android:layout_height="fill_parent" android:layout_weight="1" android:layout_width="fill_parent" android:id="@+id/scheduler_dily_sun_layout" android:orientation="vertical" android:gravity="center" android:background="@drawable/schedule_daily_top_panel_background">
+			<LinearLayout android:orientation="vertical" android:gravity="center" android:paddingRight="5dip" android:layout_height="fill_parent" android:layout_width="fill_parent" android:id="@+id/scheduler_dily_sun_btn">
+				<TextView android:id="@+id/textView2" android:layout_height="wrap_content" android:text="@string/sunday" android:layout_width="wrap_content" android:textColor="@color/text_white"></TextView>
+				<TextView android:id="@+id/textView9" android:layout_height="wrap_content" android:text="Jun 1" android:layout_width="wrap_content" android:textSize="8dip" android:textColor="@color/text_white"></TextView>
+			</LinearLayout>
+		</LinearLayout>
+		<LinearLayout android:layout_width="fill_parent" android:layout_weight="1" android:layout_height="fill_parent" android:id="@+id/scheduler_dily_mon_layout" android:orientation="vertical" android:gravity="center" android:background="@drawable/schedule_daily_top_panel_background">
+			<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:gravity="center" android:paddingRight="5dip" android:id="@+id/scheduler_dily_mon_btn">
+				<TextView android:id="@+id/textView3" android:layout_height="wrap_content" android:text="@string/monday" android:layout_width="wrap_content" android:textColor="@color/text_white"></TextView>
+				<TextView android:id="@+id/textView10" android:layout_height="wrap_content" android:text="Jun 2" android:layout_width="wrap_content" android:textSize="8dip" android:textColor="@color/text_white"></TextView>
+			</LinearLayout>
+		</LinearLayout>
+		<LinearLayout android:layout_height="fill_parent" android:layout_width="fill_parent" android:layout_weight="1" android:id="@+id/scheduler_dily_tue_layout" android:orientation="vertical" android:gravity="center" android:background="@drawable/schedule_daily_top_panel_background">
+			<LinearLayout android:orientation="vertical" android:gravity="center" android:paddingRight="5dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:id="@+id/scheduler_dily_tue_btn">
+				<TextView android:id="@+id/textView4" android:layout_height="wrap_content" android:text="@string/tuesday" android:layout_width="wrap_content" android:textColor="@color/text_white"></TextView>
+				<TextView android:id="@+id/textView11" android:layout_height="wrap_content" android:text="Jun 3" android:layout_width="wrap_content" android:textSize="8dip" android:textColor="@color/text_white"></TextView>
+			</LinearLayout>
+		</LinearLayout>
+		<LinearLayout android:layout_weight="1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:id="@+id/scheduler_dily_wed_layout" android:orientation="vertical" android:gravity="center" android:background="@drawable/schedule_daily_top_panel_background">
+			<LinearLayout android:orientation="vertical" android:gravity="center" android:paddingRight="5dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:id="@+id/scheduler_dily_wed_btn">
+				<TextView android:id="@+id/textView5" android:layout_height="wrap_content" android:text="@string/wednesday" android:layout_width="wrap_content" android:textColor="@color/text_white"></TextView>
+				<TextView android:id="@+id/textView12" android:layout_height="wrap_content" android:text="Jun 4" android:layout_width="wrap_content" android:textSize="8dip" android:textColor="@color/text_white"></TextView>
+			</LinearLayout>
+		</LinearLayout>
+		<LinearLayout android:layout_height="fill_parent" android:layout_weight="1" android:layout_width="fill_parent" android:id="@+id/scheduler_dily_thu_layout" android:orientation="vertical" android:gravity="center" android:background="@drawable/schedule_daily_top_panel_background">
+			<LinearLayout android:orientation="vertical" android:gravity="center" android:paddingRight="5dip" android:layout_height="fill_parent" android:layout_width="fill_parent" android:id="@+id/scheduler_dily_thu_btn">
+				<TextView android:id="@+id/textView6" android:layout_height="wrap_content" android:text="@string/thursday" android:layout_width="wrap_content" android:textColor="@color/text_white"></TextView>
+				<TextView android:id="@+id/textView13" android:layout_height="wrap_content" android:text="Jun 5" android:layout_width="wrap_content" android:textSize="8dip" android:textColor="@color/text_white"></TextView>
+			</LinearLayout>
+		</LinearLayout>
+		<LinearLayout android:layout_height="fill_parent" android:layout_weight="1" android:layout_width="fill_parent" android:id="@+id/scheduler_dily_fri_layout" android:orientation="vertical" android:gravity="center" android:background="@drawable/schedule_daily_top_panel_background">
+			<LinearLayout android:orientation="vertical" android:gravity="center" android:paddingRight="5dip" android:layout_height="fill_parent" android:layout_width="fill_parent" android:id="@+id/scheduler_dily_fri_btn">
+				<TextView android:id="@+id/textView7" android:layout_height="wrap_content" android:text="@string/friday" android:layout_width="wrap_content" android:textColor="@color/text_white"></TextView>
+				<TextView android:id="@+id/textView14" android:layout_height="wrap_content" android:text="Jun 6" android:layout_width="wrap_content" android:textSize="8dip" android:textColor="@color/text_white"></TextView>
+			</LinearLayout>
+		</LinearLayout>
+		<LinearLayout android:layout_height="fill_parent" android:layout_weight="1" android:layout_width="fill_parent" android:id="@+id/scheduler_dily_sat_layout" android:orientation="vertical" android:gravity="center" android:background="@drawable/schedule_daily_top_panel_background">
+			<LinearLayout android:orientation="vertical" android:paddingRight="5dip" android:gravity="center" android:layout_height="fill_parent" android:layout_width="fill_parent" android:id="@+id/scheduler_dily_sat_btn">
+				<TextView android:id="@+id/textView8" android:layout_height="wrap_content" android:text="@string/saturday" android:layout_width="wrap_content" android:textColor="@color/text_white"></TextView>
+				<TextView android:id="@+id/textView15" android:layout_height="wrap_content" android:text="Jun 7" android:layout_width="wrap_content" android:textSize="8dip" android:textColor="@color/text_white"></TextView>
+			</LinearLayout>
+		</LinearLayout>
+		<LinearLayout android:layout_height="fill_parent" android:layout_weight="1" android:layout_width="fill_parent" android:id="@+id/scheduler_dily_fwd_layout" android:gravity="center" android:background="@drawable/schedule_daily_top_panel_background" android:clickable="true">
+			<Button android:layout_height="wrap_content" android:id="@+id/scheduler_daily_fwd_button" android:layout_width="wrap_content" android:background="@drawable/xml_button_fwd" android:duplicateParentState="true" android:clickable="false"></Button>
+		</LinearLayout>
+	</LinearLayout>
+	<ListView android:layout_height="fill_parent" 
+		android:layout_width="fill_parent"
+		android:minWidth="100dip" android:layout_above="@+id/all_shows_menu_footer" android:layout_below="@id/scheduler_days_layout" android:id="@+id/schedule_daily_list" android:fastScrollEnabled="true" android:background="#1C1C1C">
+	</ListView>
+	<ProgressBar android:layout_centerInParent="true" android:id="@+id/scheduler_daily_progress" android:layout_height="wrap_content" android:layout_width="wrap_content"></ProgressBar>
+</RelativeLayout>

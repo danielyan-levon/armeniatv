@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingLeft="10dip" android:paddingRight="10dip">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/all_shows_dialog_list_item_layout_upper">
+        <TextView android:id="@+id/all_shows_dialog_list_item_programm_name" android:layout_width="wrap_content" android:text="TextView" android:layout_height="wrap_content" android:textColor="@color/text_orange" android:textStyle="bold" android:layout_marginTop="8dip" android:textSize="17dip"></TextView>
+        <ImageView android:layout_width="wrap_content" android:src="@drawable/play" android:layout_height="wrap_content" android:id="@+id/all_shows_dialog_list_item_play_button" android:layout_alignParentRight="true" android:layout_centerVertical="true"></ImageView>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="wrap_content" android:id="@+id/all_shows_dialog_list_item_layout_bottom" android:layout_height="wrap_content" android:layout_below="@+id/all_shows_dialog_list_item_layout_upper">
+    </RelativeLayout>
+</RelativeLayout>

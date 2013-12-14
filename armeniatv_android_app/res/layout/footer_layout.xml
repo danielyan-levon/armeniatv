@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" android:background="@drawable/bottom_toolbar_background"
+	android:id="@+id/featured_menu_footer" android:layout_height="50dip"
+	android:layout_width="fill_parent" >
+	<LinearLayout android:id="@+id/linearLayout2"
+		android:layout_height="fill_parent" android:layout_width="fill_parent">
+		<RelativeLayout android:id="@+id/featured_featured_button"
+			android:layout_height="fill_parent" android:layout_width="fill_parent"
+			android:layout_weight="1" android:clickable="true">
+			<RelativeLayout android:id="@+id/relativeLayout1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:clickable="false" android:duplicateParentState="true">
+				<Button android:clickable="false" android:background="@drawable/xml_button_featured" android:duplicateParentState="true" android:layout_width="wrap_content" android:id="@+id/button1" android:layout_height="wrap_content" android:layout_centerHorizontal="true"></Button>
+				<TextView android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/button1" android:text="Featured" android:textColor="@drawable/xml_text_white_yellow" android:duplicateParentState="true"></TextView>
+			</RelativeLayout>
+		</RelativeLayout>
+		<RelativeLayout android:id="@+id/featured_schedule_button"
+			android:layout_height="fill_parent" android:layout_width="fill_parent"
+			android:layout_weight="1" android:clickable="true">
+			<RelativeLayout android:id="@+id/relativeLayout2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:clickable="false" android:duplicateParentState="true">
+				<Button android:clickable="false" android:background="@drawable/xml_button_schedule" android:duplicateParentState="true" android:layout_width="wrap_content" android:id="@+id/button2" android:layout_height="wrap_content" android:layout_centerHorizontal="true"></Button>
+				<TextView android:id="@+id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/button2" android:text="Schedule" android:textColor="@drawable/xml_text_white_yellow" android:duplicateParentState="true"></TextView>
+			</RelativeLayout>
+		</RelativeLayout>
+		<RelativeLayout android:id="@+id/featured_all_shows_button"
+			android:layout_height="fill_parent" android:layout_width="fill_parent"
+			android:layout_weight="1" android:clickable="true">
+			<RelativeLayout android:id="@+id/relativeLayout3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:duplicateParentState="true" android:clickable="false">
+				<Button android:clickable="false" android:background="@drawable/xml_button_all_shows" android:duplicateParentState="true" android:layout_width="wrap_content" android:id="@+id/button3" android:layout_height="wrap_content" android:layout_centerHorizontal="true"></Button>
+				<TextView android:id="@+id/textView3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/button3" android:text="All Shows" android:textColor="@drawable/xml_text_white_yellow" android:duplicateParentState="true"></TextView>
+			</RelativeLayout>
+		</RelativeLayout>
+		<RelativeLayout android:id="@+id/featured_me_button"
+			android:layout_height="fill_parent" android:layout_width="fill_parent"
+			android:layout_weight="1" android:clickable="true">
+			<RelativeLayout android:id="@+id/relativeLayout4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:clickable="false" android:duplicateParentState="true">
+				<Button android:clickable="false" android:background="@drawable/xml_button_me" android:duplicateParentState="true" android:layout_width="wrap_content" android:id="@+id/button4" android:layout_height="wrap_content" android:layout_centerHorizontal="true"></Button>
+				<TextView android:id="@+id/textView4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/button4" android:text="Me" android:textColor="@drawable/xml_text_white_yellow" android:duplicateParentState="true"></TextView>
+			</RelativeLayout>
+		</RelativeLayout>
+		<RelativeLayout android:id="@+id/featured_info_button"
+			android:layout_height="fill_parent" android:layout_width="fill_parent"
+			android:layout_weight="1" android:clickable="true">
+			<RelativeLayout android:id="@+id/relativeLayout5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:duplicateParentState="true" android:clickable="false">
+				<Button android:clickable="false" android:background="@drawable/xml_button_info" android:duplicateParentState="true" android:layout_width="wrap_content" android:id="@+id/button5" android:layout_height="wrap_content" android:layout_centerHorizontal="true"></Button>
+				<TextView android:id="@+id/textView5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/button5" android:text="Info" android:textColor="@drawable/xml_text_white_yellow" android:duplicateParentState="true"></TextView>
+			</RelativeLayout>
+		</RelativeLayout>
+	</LinearLayout>
+</RelativeLayout>
+

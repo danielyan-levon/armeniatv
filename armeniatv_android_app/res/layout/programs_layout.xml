@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent">
+	<RelativeLayout android:layout_width="fill_parent"
+		android:layout_height="wrap_content" android:id="@+id/header">
+		<RelativeLayout android:id="@+id/relativeLayout1" 
+			android:layout_width="fill_parent" android:layout_height="50dip" android:background="@drawable/bottom_toolbar_background">
+			<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="@color/text_white" android:layout_centerInParent="true" android:text="@string/all_shows_title" android:textSize="18dip" android:id="@+id/all_programms_layout_title"></TextView>
+		</RelativeLayout>
+	</RelativeLayout>
+	<RelativeLayout android:layout_width="fill_parent" android:background="@drawable/bottom_toolbar_background" android:layout_height="50dip" android:layout_alignParentBottom="true" android:id="@+id/all_shows_menu_footer">
+		<include layout="@layout/footer_layout" android:id="@+id/featured_menu_footer_ref"  android:layout_width="fill_parent" android:layout_height="50dip" android:layout_alignParentBottom="true"/>
+	</RelativeLayout>
+	<RelativeLayout android:id="@+id/relativeLayout2" android:layout_above="@+id/all_shows_menu_footer" android:layout_below="@id/header" android:layout_height="fill_parent" android:layout_width="fill_parent">
+		<GridView android:clipChildren="false" android:numColumns="auto_fit" android:id="@+id/programs_list" android:verticalSpacing="5dip" android:horizontalSpacing="5dip" android:clickable="true" android:minWidth="100dip" android:layout_width="fill_parent" android:layout_height="fill_parent"></GridView>
+		<ProgressBar android:layout_centerInParent="true" android:layout_width="wrap_content" android:id="@+id/all_shows_progress_bar" android:layout_height="wrap_content"></ProgressBar>
+	</RelativeLayout>
+</RelativeLayout>
